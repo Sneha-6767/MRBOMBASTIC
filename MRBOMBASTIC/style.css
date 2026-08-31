@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: #f7efd9;
+}
+
+.stage {
+  width: min(94vmin, 820px);
+  height: min(94vmin, 820px);
+  display: grid;
+  place-items: center;
+}
+
+.pookalam {
+  width: 100%;
+  height: 100%;
+  display: block;
+  filter:
+    drop-shadow(0 10px 10px rgba(50, 25, 15, .18));
+}
+
+/* Base colours */
+.outerOrange {
+  fill: #e9670b;
+}
+
+.orangeInner {
+  fill: #f47b0d;
+}
+
+.goldRing {
+  fill: none;
+  stroke: #f4c83d;
+  stroke-width: 13;
+}
+
+.greenField {
+  fill: #073d2d;
+}
+
+/* Outer eight petals */
+.outerPetal {
+  fill: #351329;
+  stroke: #251020;
+  stroke-width: 4;
+}
+
+.outerPink {
+  fill: #d85b88;
+  stroke: #4a1736;
+  stroke-width: 4;
+}
+
+.pinkHighlight {
+  fill: none;
+  stroke: #f19ab8;
+  stroke-width: 4;
+  stroke-linecap: round;
+  opacity: .9;
+}
+
+/* White and purple star */
+.whiteStar {
+  fill: #fffdf2;
+  stroke: #fffdf2;
+  stroke-width: 5;
+  stroke-linejoin: round;
+}
+
+.purpleStar {
+  fill: #552279;
+  stroke: #3d175c;
+  stroke-width: 3;
+  stroke-linejoin: round;
+}
+
+.purpleDots {
+  fill: #7c46a1;
+  opacity: .72;
+}
+
+/* Red central layer */
+.redField {
+  fill: #c82034;
+}
+
+.redSeams {
+  fill: none;
+  stroke: #e03b4d;
+  stroke-width: 5;
+  opacity: .75;
+  stroke-linecap: round;
+}
+
+.goldOutline {
+  fill: #f5d31d;
+  stroke: #f5d31d;
+  stroke-width: 3;
+  stroke-linejoin: round;
+}
+
+.deepRed {
+  fill: #9d1324;
+}
+
+.petalDot {
+  fill: #c52b39;
+}
+
+.yellowGrains {
+  fill: #ffd83a;
+}
+
+.outerDots {
+  fill: #f99525;
+  opacity: .72;
+}
+
+/* Centre */
+.centerRedRing {
+  fill: #a61627;
+}
+
+.centerGreenRing {
+  fill: #184b38;
+}
+
+.greenPetal {
+  fill: #2b664c;
+  stroke: #174332;
+  stroke-width: 2;
+}
+
+.whitePetal {
+  fill: #fffdf0;
+  stroke: #ddd8c9;
+  stroke-width: 2;
+}
+
+.centerWhite {
+  fill: #fff8e9;
+  stroke: #c7c0d9;
+  stroke-width: 5;
+}
+
+.centerPink {
+  fill: #e4d2d2;
+}
+
+.centerGold {
+  fill: #e1c637;
+}
+
+.centerSpecks {
+  fill: #ffffff;
+  opacity: .65;
+}
+
+/* Keep the whole design visible on small screens */
+@media (max-width: 600px) {
+  .stage {
+    width: 97vmin;
+    height: 97vmin;
+  }
+}
